@@ -206,7 +206,7 @@ const storySlider = new Swiper(".sc-story .swiper", {
   },
   on: {
     init: function () {
-      $(".sc-story .total").text(this.slides.length);
+      $(".sc-story .total").text(this.slides.length-2);
     },
     slideChange: function () {
       $(".sc-story .current").text(this.realIndex + 1);
