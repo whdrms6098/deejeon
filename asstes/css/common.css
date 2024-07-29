@@ -1,0 +1,138 @@
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  margin: -1px;
+}
+
+#skipNav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+#skipNav a {
+  position: absolute;
+  white-space: nowrap;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  top: -50px;
+}
+
+#skipNav a:focus,
+#skipNav a:active {
+  top: 0;
+}
+
+#wrapper {
+  overflow: hidden;
+}
+
+html.active {
+  overflow: hidden;
+}
+
+.display-pc {
+  display: block;
+}
+
+.display-m {
+  display: none;
+}
+
+.head-line {
+  color: #222;
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.btn-control [class*="btn-"]::before {
+  content: "";
+  display: block;
+  width: 11px;
+  height: 13px;
+  background: url("../images/btn-sp.png") no-repeat;
+  background-size: auto 100%;
+}
+
+.link-more::before {
+  transition: 0.2s;
+}
+
+.link-more::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #fff;
+  background-image: url("../images/btn-more.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ico-new {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("../images/ico-new.png") no-repeat;
+  vertical-align: middle;
+}
+
+.ico-time {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url("../images/ico-time.png") no-repeat;
+}
+
+.service-list [class*="ico-"],
+.sc-service [class*="btn-"]::before {
+  content: "";
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.2s;
+}
+
+.service-list [class*="ico-"] {
+  border: 1px solid #eaeaee;
+  box-shadow: 1px 7px 14px 0px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.sc-service [class*="btn-"]::before {
+  background-color: #31343d;
+}
+
+.sc-field [class*="ico-"] {
+  content: "";
+  width: 29px;
+  height: 28px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sc-comm [class*="ico-"] {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

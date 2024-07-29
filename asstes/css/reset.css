@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+input {
+    outline: none;
+}
+
+a {
+    text-decoration: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+ul {
+    list-style: none;
+}
+
+fieldset {
+    border: 0;
+}
+
+html {
+    font-size: 16px;
+    line-height: 10.5px;
+}
+
+body {
+    line-height: 23px;
+    font-weight: 500;
+    word-break: keep-all;
+    font-family: "Nanum Gothic", sans-serif;
+}
